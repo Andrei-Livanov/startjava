@@ -1,10 +1,7 @@
+// TODO: научиться использовать оператор ветвления
+// в Java - if.
 public class ConditionalStatement {
-	
 	public static void main(String[] args) {
-
-	    // TODO: научиться использовать оператор ветвления
-	    // в Java - if.
-
 	    byte age = 30;
 	    if(age > 20) {
 	    	System.out.println("Старше 20 лет.");
@@ -26,10 +23,10 @@ public class ConditionalStatement {
 	    	System.out.println("Рост больше или равен 180 см.");
 	    }
 
-	    char name = 'A';
-	    if(name == 'M') {
+	    char firstNameLetter = 'A';
+	    if(firstNameLetter == 'M') {
 	    	System.out.println("Имя Михаил.");
-	    } else if(name == 'I') {
+	    } else if(firstNameLetter == 'I') {
 	    	System.out.println("Имя Игорь.");
 	    } else {
 	    	System.out.println("Имя Андрей.");
