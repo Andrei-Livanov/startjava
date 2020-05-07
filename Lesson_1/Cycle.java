@@ -23,7 +23,7 @@ public class Cycle {
 
 		System.out.println();
 
-        int a = 10;
+		int a = 10;
 		int sum = 0;
 		do {
 			if (a % 2 == 1) {

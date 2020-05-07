@@ -11,9 +11,9 @@ public class Calculator {
 		int a = 4;
 		int b = 2;
 		int result;
-		char sign = '+';    // +, -, *, /, ^, %  знак математической
-		                    // операции                                          
-        if(sign == '+') {                // сложение
+		char sign = '+';	// +, -, *, /, ^, %  знак математической
+		                	// операции
+		if(sign == '+') {                // сложение
         	result = a + b;                 
 			System.out.println(result);
 		} else if(sign == '-') {         // вычитание

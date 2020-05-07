@@ -11,25 +11,25 @@ public class MyFirstGame {
 	public static void main(String[] args) {
 		
 		System.out.println("Компьютер загадал число от 0 до 100," +
-			               					" попробуйте угадать его!");
+			               				" попробуйте угадать его!");
 		int num = 37;   // загаданное число
-	    int i = 0;      // число введённое пользователем
-        do {
+		int i = 0;      // число введённое пользователем
+		do {
         	i= 38;
         	if(i > num) {  
 				System.out.println("Введённое вами число больше того," +
-			                   	   				" что загадал компьютер!");
-            } else if(i < num) {   
+			                   	   			" что загадал компьютер!");
+			} else if(i < num) {   
 				System.out.println("Введённое вами число меньше того," +
-			                       				" что загадал компьютер!");
+			                       			" что загадал компьютер!");
 			}
 			
 			System.out.println("Попробуйте ещё раз!");
 
-            i = 37;
-			if(i == num) System.out.println("Вы угадали!");    	
-	    } while(i != num);
-        
-        System.out.println("Конце игры!");
+			i = 37;
+			if(i == num) System.out.println("Вы угадали!");
+		} while(i != num);
+
+		System.out.println("Конце игры!");
 	}
 }
