@@ -2,7 +2,6 @@
 // в Java. Присвоить значение и вывести на консоль. 
 public class Variable {
 	public static void main(String[] args) {
-		
 		byte core = 6;
 		System.out.println("Количество ядер: " + core);
 
