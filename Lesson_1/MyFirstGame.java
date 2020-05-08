@@ -10,7 +10,7 @@
 public class MyFirstGame {
 	public static void main(String[] args) {
 		System.out.println("Компьютер загадал число от 0 до 100," +
-										" попробуйте угадать его!");
+									" попробуйте угадать его!");
 		int num = 37;	// загаданное число
 		int i = 0;		// число введённое пользователем
 		do {
