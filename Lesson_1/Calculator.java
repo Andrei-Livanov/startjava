@@ -1,18 +1,17 @@
 /*
- TODO:
+  TODO:
   - Создать калькулятор, выполняющий следующие математические
-    операции над целыми положительными числами: +, -, *, /, ^, %;
-  - Знак математической операции проверять оператором if else;  
+	операции над целыми положительными числами: +, -, *, /, ^, %;
+  - Знак математической операции проверять оператором if else;
   - Вывести результат работы калькулятора с помощью
-    System.out.println().
- */   
-public class Calculator {	
+	System.out.println().
+ */
+public class Calculator {
 	public static void main(String[] args) {
 		int a = 4;
 		int b = 2;
 		int result;
-		char sign = '+';	// +, -, *, /, ^, %  знак математической
-							// операции
+		char sign = '+';	// +, -, *, /, ^, %  знак математической операции
 		if(sign == '+') {				// сложение
 			System.out.println(a + b);
 		} else if(sign == '-') {		// вычитание
@@ -32,5 +31,5 @@ public class Calculator {
 		} else if(sign == '%') {		// остаток от деления
 			System.out.println(a % b);
 		}
-	}	
+	}
 }

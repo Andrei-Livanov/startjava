@@ -1,5 +1,5 @@
 // TODO: объявить переменные всех примитивных типов данных
-// в Java. Присвоить значение и вывести на консоль. 
+// в Java. Присвоить значение и вывести на консоль.
 public class Variable {
 	public static void main(String[] args) {
 		byte core = 6;
@@ -23,9 +23,9 @@ public class Variable {
 		char cpu = 'i', n = '7';
 		System.out.println("Процессор: " + cpu + n);
 
-		boolean win = true;
-		if(win != false) {
+		boolean win = false;
+		if(!win) {
 			System.out.println("ОС Windows 10");
-		}		
+		}
 	}
 }
