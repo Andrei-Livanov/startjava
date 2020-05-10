@@ -11,18 +11,18 @@
 public class MyFirstGame {
 	public static void main(String[] args) {
 		System.out.println("Компьютер загадал число от 0 до 100," + " попробуйте угадать его!");
-		int numEntByComp = 37;
-		int numEntByPlayer;
+		int hiddenNum = 37;
+		int playerNum;
 		do {
-			numEntByPlayer = (int) (Math.random() * 101);
-			if(numEntByPlayer > numEntByComp) {
-				System.out.println("Введённое вами число больше того," + " что загадал компьютер!");
+			playerNum = (int) (Math.random() * 101);
+			if(playerNum > hiddenNum) {
+				System.out.println("Введённое вами число больше того, что загадал компьютер!");
 				System.out.println("Попробуйте ещё раз!");
-			} else if(numEntByPlayer < numEntByComp) {
-				System.out.println("Введённое вами число меньше того," + " что загадал компьютер!");
+			} else if(playerNum < hiddenNum) {
+				System.out.println("Введённое вами число меньше того, что загадал компьютер!");
 				System.out.println("Попробуйте ещё раз!");
 			}
-		} while(numEntByPlayer != numEntByComp);
+		} while(playerNum != hiddenNum);
 
 		System.out.println("Вы угадали!");
 	}
