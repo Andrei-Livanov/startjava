@@ -14,15 +14,15 @@ public class Wolf {
 		System.out.println(name + " сидит");
 	}
 
-		void run() {
+	void run() {
 		System.out.println(name + " бежит");
 	}
 
-		void howl() {
+	void howl() {
 		System.out.println("Ауу-аууу");
 	}
 
-		void hunt() {
+	void hunt() {
 		System.out.println(name + " на охоте!");
 	}
 }
