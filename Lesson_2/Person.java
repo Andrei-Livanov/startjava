@@ -6,7 +6,7 @@ public class Person {
 	int weight = 78;
 	int age = 41;
 
-	boolean sit () {
+	boolean sit() {
 		System.out.println(name + " сидит");
 		return true;
 	}

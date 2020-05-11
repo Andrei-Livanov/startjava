@@ -1,6 +1,5 @@
 public class WolfTest {
 	public static void main(String[] args) {
-
 		Wolf w1 = new Wolf();
 
 		w1.name = "Серый";
