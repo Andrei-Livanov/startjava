@@ -1,33 +1,33 @@
 import java.util.Scanner;
+
 public class CalculatorTest {
 	public static void main(String[] args) {
 		Calculator calculator = new Calculator();
 		Scanner sc = new Scanner(System.in);
 
-		boolean yn = true;
-		while(yn) {
-			System.out.println("Введите первое число");
-			calculator.num1 = sc.nextInt();
+		String answer = "yes";
+		while(answer.equals("yes")) {
+			System.out.println("Калькулятор может: + , -, *, /, ^, %.");
+			System.out.print("Введите первое число: ");
+			int num1 = sc.nextInt();
+			calculator.setNum1(num1);
 
-			System.out.println("Введите знак математической операции:");
-			System.out.println("+ , -, *, /, ^, %");
-			calculator.sign = sc.next().charAt(0);
+			System.out.print("Введите знак математической операции: ");
+			char sign = sc.next().charAt(0);
+			calculator.setSign(sign);
 
-			System.out.println("Введите второе число");
-			calculator.num2 = sc.nextInt();
+			System.out.print("Введите второе число: ");
+			int num2 = sc.nextInt();
+			calculator.setNum2(num2);
 
-			calculator.calc();
+			calculator.calculate();
+			System.out.print("Результат равен: " + calculator.getResult()+ "\n");
 
-			boolean checking = true;
-			while(checking) {
-				System.out.print("Хотите продолжить? [yes/no]:");
-				String answer = sc.next();
-				if(answer.equals("yes")) {
-					checking = false;
-				} if(answer.equals("no")) {
-					checking = false;
-					yn = false;
-				}
+			while(true) {
+				System.out.print("Хотите продолжить? [yes/no]: ");
+				answer = sc.next();
+				if(answer.equals("yes")) break;
+				if(answer.equals("no")) break;
 			}
 		}
 	}

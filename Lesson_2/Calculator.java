@@ -1,32 +1,48 @@
 public class Calculator {
 
-	int num1;
-	int num2;
-	char sign;
+	private int num1;
+	private int num2;
+	private char sign;
+	private int result;
 
-	public void calc() {
+	void setSign(char sign) {
+		this.sign = sign;
+	}
+
+	void setNum1(int num1) {
+		this.num1 = num1;
+	}
+
+	void setNum2(int num2) {
+		this.num2 = num2;
+	}
+
+	public int getResult() {
+		return result;
+	}
+
+	public void calculate() {
 		switch(sign) {
 			case '+':
-				System.out.println(num1 + num2);
+				result = num1 + num2;
 				break;
 			case '-':
-				System.out.println(num1 - num2);
+				result = num1 - num2;
 				break;
 			case '*':
-				System.out.println(num1 * num2);
+				result = num1 * num2;
 				break;
 			case '/':
-				System.out.println(num1 / num2);
+				result = num1 / num2;
 				break;
 			case '^':
-				int result = 1;
+				result = 1;
 				for(int i = 1; i <= num2; i++) {
 					result *= num1;
 				}
-				System.out.println(result);
 				break;
 			case '%':
-				System.out.println(num1 % num2);
+				result = num1 % num2;
 				break;
 		}
 	}
