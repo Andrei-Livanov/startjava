@@ -11,8 +11,11 @@ public class Player {
 		return name;
 	}
 
-	public int setNumber(int number) {
-		this.number = number;
+	public int getNumber() {
 		return number;
+	}
+
+	void setNumber(int number) {
+		this.number = number;
 	}
 }

@@ -23,7 +23,7 @@ public class CalculatorTest {
 			calculator.calculate();
 			System.out.print("Результат равен: " + calculator.getResult()+ "\n");
 
-			while(true) {
+			while(!answer.equals("yes") || !answer.equals("no")) {
 				System.out.print("Хотите продолжить? [yes/no]: ");
 				answer = sc.next();
 				if(answer.equals("yes")) break;
