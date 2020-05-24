@@ -14,21 +14,19 @@ public class GuessNumber {
 
 	public void startGame() {
 		while(true) {
-			if(true) {
-				System.out.print("Введите ваше число, " + player1.getName() + ": ");
-				int num = sc.nextInt();
-				player1.setNumber(num);
-				int number = player1.getNumber();
-				if(compareNumbers(number)) {
-					break;
-				}
-				System.out.print("Введите ваше число, " + player2.getName() + ": ");
-				num = sc.nextInt();
-				player2.setNumber(num);
-				number = player2.getNumber();
-				if(compareNumbers(number)) {
-					break;
-				}
+			System.out.print("Введите ваше число, " + player1.getName() + ": ");
+			int num = sc.nextInt();
+			player1.setNumber(num);
+			int number = player1.getNumber();
+			if(compareNumbers(number)) {
+				break;
+			}
+			System.out.print("Введите ваше число, " + player2.getName() + ": ");
+			num = sc.nextInt();
+			player2.setNumber(num);
+			number = player2.getNumber();
+			if(compareNumbers(number)) {
+				break;
 			}
 		}
 	}
@@ -37,12 +35,11 @@ public class GuessNumber {
 		if(number == hiddenNum) {
 			System.out.println("Поздравляем! Вы победитель!");
 			return true;
-		}
-
-		if(number < hiddenNum) {
+		} else if(number < hiddenNum) {
 			System.out.println("Это число меньше, чем загадал компьютер.");
-		}else if(number > hiddenNum) {
+		} else {
 			System.out.println("Это число больше, чем загадал компьютер.");
-		} return false;
+		}
+		return false;
 	}
 }

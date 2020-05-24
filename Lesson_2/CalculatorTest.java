@@ -5,8 +5,8 @@ public class CalculatorTest {
 		Calculator calculator = new Calculator();
 		Scanner sc = new Scanner(System.in);
 
-		String answer = "yes";
-		while(answer.equals("yes")) {
+		String answer;
+		do {
 			System.out.println("Калькулятор может: + , -, *, /, ^, %.");
 			System.out.print("Введите первое число: ");
 			int num1 = sc.nextInt();
@@ -23,12 +23,10 @@ public class CalculatorTest {
 			calculator.calculate();
 			System.out.print("Результат равен: " + calculator.getResult()+ "\n");
 
-			while(!answer.equals("yes") || !answer.equals("no")) {
+			do {
 				System.out.print("Хотите продолжить? [yes/no]: ");
 				answer = sc.next();
-				if(answer.equals("yes")) break;
-				if(answer.equals("no")) break;
-			}
-		}
+			} while(!answer.equals("yes") && !answer.equals("no"));
+		} while(answer.equals("yes"));
 	}
 }
