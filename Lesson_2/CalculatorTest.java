@@ -9,16 +9,13 @@ public class CalculatorTest {
 		do {
 			System.out.println("Калькулятор может: + , -, *, /, ^, %.");
 			System.out.print("Введите первое число: ");
-			int num1 = sc.nextInt();
-			calculator.setNum1(num1);
+			calculator.setNum1(sc.nextInt());
 
 			System.out.print("Введите знак математической операции: ");
-			char sign = sc.next().charAt(0);
-			calculator.setSign(sign);
+			calculator.setSign(sc.next().charAt(0));
 
 			System.out.print("Введите второе число: ");
-			int num2 = sc.nextInt();
-			calculator.setNum2(num2);
+			calculator.setNum2(sc.nextInt());
 
 			System.out.print("Результат равен: " + calculator.calculate()+ "\n");
 
