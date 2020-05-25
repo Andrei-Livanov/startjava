@@ -20,8 +20,7 @@ public class CalculatorTest {
 			int num2 = sc.nextInt();
 			calculator.setNum2(num2);
 
-			calculator.calculate();
-			System.out.print("Результат равен: " + calculator.getResult()+ "\n");
+			System.out.print("Результат равен: " + calculator.calculate()+ "\n");
 
 			do {
 				System.out.print("Хотите продолжить? [yes/no]: ");

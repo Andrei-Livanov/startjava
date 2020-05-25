@@ -7,7 +7,7 @@ public class GuessNumber {
 	private Player player2;
 	Scanner sc = new Scanner(System.in);
 
-	public GuessNumber (Player player1, Player player2) {
+	public GuessNumber(Player player1, Player player2) {
 		this.player1 = player1;
 		this.player2 = player2;
 	}
@@ -15,15 +15,13 @@ public class GuessNumber {
 	public void startGame() {
 		while(true) {
 			System.out.print("Введите ваше число, " + player1.getName() + ": ");
-			int num = sc.nextInt();
-			player1.setNumber(num);
+			player1.setNumber(sc.nextInt());
 			int number = player1.getNumber();
 			if(compareNumbers(number)) {
 				break;
 			}
 			System.out.print("Введите ваше число, " + player2.getName() + ": ");
-			num = sc.nextInt();
-			player2.setNumber(num);
+			player2.setNumber(sc.nextInt());
 			number = player2.getNumber();
 			if(compareNumbers(number)) {
 				break;
