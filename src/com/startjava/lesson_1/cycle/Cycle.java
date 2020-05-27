@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.cycle;
+
 /*
   TODO:
   - Вывести на консоль числа от 0 до 20 с помощью цикла for;

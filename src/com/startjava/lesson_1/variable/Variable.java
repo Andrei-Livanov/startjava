@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.variable;
+
 // TODO: объявить переменные всех примитивных типов данных
 // в Java. Присвоить значение и вывести на консоль.
 public class Variable {

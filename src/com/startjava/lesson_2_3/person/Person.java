@@ -1,3 +1,5 @@
+package com.startjava.lesson_2_3.person;
+
 public class Person {
 
 	char gender = 'm';
@@ -20,7 +22,7 @@ public class Person {
 	}
 
 	String say() {
-
+		return "say";
 	}
 
 	void learnJava() {

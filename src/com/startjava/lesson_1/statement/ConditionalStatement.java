@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.statement;
+
 // TODO: научиться использовать оператор ветвления
 // в Java - if.
 public class ConditionalStatement {

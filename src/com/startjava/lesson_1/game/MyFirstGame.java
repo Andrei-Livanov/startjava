@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.game;
+
 /*
   TODO:
   - Компьютер "загадывает" целое число от 0 до 100,
@@ -10,7 +12,7 @@
  */
 public class MyFirstGame {
 	public static void main(String[] args) {
-		System.out.println("Компьютер загадал число от 0 до 100," + " попробуйте угадать его!");
+		System.out.println("Компьютер загадал число от 0 до 100, попробуйте угадать его!");
 		int hiddenNum = 37;
 		int playerNum;
 		do {

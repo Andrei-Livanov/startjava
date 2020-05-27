@@ -1,3 +1,5 @@
+package com.startjava.lesson_1.calculator;
+
 /*
   TODO:
   - Создать калькулятор, выполняющий следующие математические
