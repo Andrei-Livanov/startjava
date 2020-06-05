@@ -21,13 +21,11 @@ public class GuessNumber {
 		while(attemptNumber <= 10) {
 			System.out.print("Введите ваше число, " + player1.getName() + ": ");
 			player1.setNumber(attemptNumber, sc.nextInt());
-			player1.getNumber(attemptNumber);
 			if(compareNumbers(player1)) {
 				break;
 			}
 			System.out.print("Введите ваше число, " + player2.getName() + ": ");
 			player2.setNumber(attemptNumber, sc.nextInt());
-			player2.getNumber(attemptNumber);
 			if(compareNumbers(player2)) {
 				break;
 			}
