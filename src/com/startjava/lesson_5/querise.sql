@@ -1,0 +1,12 @@
+SELECT * FROM Robots;
+SELECT * FROM Robots WHERE status != 'Destroyed';
+SELECT * FROM Robots WHERE mark = 'Mark-1' OR mark = 'Mark-6';
+SELECT * FROM Robots ORDER BY mark DESC;
+SELECT * FROM Robots WHERE launch = (SELECT MIN(launch) FROM Robots);
+SELECT * FROM Robots WHERE kaijukill = (SELECT MIN(kaijukill) FROM Robots);
+SELECT * FROM Robots WHERE kaijukill = (SELECT MAX(kaijukill) FROM Robots);
+SELECT AVG(weight) FROM Robots;
+UPDATE Robots SET kaijukill = kaijukill + 1 WHERE status != 'Destroyed';
+SELECT * FROM Robots;
+DELETE FROM Robots WHERE status = 'Destroyed';
+SELECT * FROM Robots;
